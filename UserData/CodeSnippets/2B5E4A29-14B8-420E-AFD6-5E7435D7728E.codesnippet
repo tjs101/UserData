@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>request</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassInterfaceMethods</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+
+SRServerRequest *request = [SRServerRequest requestWithURL:[NSURL URLWithString:kRedPotURL]];
+request.delegate = self;
+request.parameters = parameters;
+[request setHTTPComplete:^(SRServerRequest *serverRequest, NSDictionary *responseDict) {
+    
+}];
+[request setHTTPFailed:^(SRServerRequest *serverRequest) {
+    
+}];
+[request startAsynchronousRequest];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2B5E4A29-14B8-420E-AFD6-5E7435D7728E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>request</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
